@@ -1,0 +1,81 @@
+<section id="skills" class="skills-section">
+  <div class="container">
+    <!-- Heading -->
+
+    <div class="section-heading">
+      <span class="section-label"> MY TOOLKIT </span>
+
+      <h2>
+        Technologies I use to
+        <span class="gradient-text"> build things. </span>
+      </h2>
+
+      <p>
+        A practical combination of frontend frameworks, reactive programming, APIs and development
+        tools.
+      </p>
+    </div>
+
+    <!-- Featured technologies -->
+
+    <div class="featured-skills">
+      @for (skill of featuredSkills; track skill.name) {
+        <div class="featured-skill">
+          <div class="featured-icon">
+            <i [class]="skill.icon"></i>
+          </div>
+
+          <span>
+            {{ skill.name }}
+          </span>
+        </div>
+      }
+    </div>
+
+    <!-- Categories -->
+
+    <div class="row g-4 mt-4">
+      @for (category of categories; track category.title) {
+        <div class="col-md-6 col-xl-4">
+          <div class="skill-category">
+            <!-- Header -->
+
+            <div class="category-header">
+              <div class="category-icon">
+                <i [class]="category.icon"></i>
+              </div>
+
+              <div>
+                <h3>
+                  {{ category.title }}
+                </h3>
+
+                <p>
+                  {{ category.description }}
+                </p>
+              </div>
+            </div>
+
+            <!-- Skills -->
+
+            <div class="skill-list">
+              @for (skill of category.skills; track skill.name) {
+                <div class="skill-item">
+                  <div class="skill-item-left">
+                    <i [class]="skill.icon"></i>
+
+                    <span>
+                      {{ skill.name }}
+                    </span>
+                  </div>
+
+                  <i class="bi bi-arrow-up-right skill-arrow"></i>
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

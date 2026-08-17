@@ -1,0 +1,137 @@
+<section id="projects" class="projects-section">
+  <div class="container">
+    <!-- Heading -->
+
+    <div class="section-heading">
+      <span class="section-label"> SELECTED WORK </span>
+
+      <h2>
+        Projects that
+        <span class="gradient-text"> made an impact. </span>
+      </h2>
+
+      <p>A selection of enterprise applications and personal projects I've worked on.</p>
+    </div>
+
+    <!-- Projects -->
+
+    <div class="projects-list">
+      @for (project of projects; track project.title; let i = $index) {
+        <article class="project-case" [class.project-reverse]="i % 2 !== 0">
+          <!-- Project Content -->
+
+          <div class="project-content">
+            <div class="project-number">
+              {{ project.number }}
+            </div>
+
+            <span class="project-category">
+              {{ project.category }}
+            </span>
+
+            <h3>
+              {{ project.title }}
+            </h3>
+
+            <p class="project-role">
+              {{ project.role }}
+            </p>
+
+            <p class="project-description">
+              {{ project.description }}
+            </p>
+
+            <!-- Technologies -->
+
+            <div class="project-technologies">
+              @for (technology of project.technologies; track technology) {
+                <span>
+                  {{ technology }}
+                </span>
+              }
+            </div>
+
+            <!-- Highlights -->
+
+            <div class="project-highlights">
+              <h4>Key highlights</h4>
+
+              <ul>
+                @for (highlight of project.highlights; track highlight) {
+                  <li>
+                    <i class="bi bi-check2"></i>
+
+                    {{ highlight }}
+                  </li>
+                }
+              </ul>
+            </div>
+          </div>
+
+          <!-- Visual -->
+
+          <div class="project-visual">
+            <div class="browser-window">
+              <!-- Browser header -->
+
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="browser-address">portfolio.app</div>
+              </div>
+
+              <!-- Mock UI -->
+
+              <div class="mock-ui">
+                <div class="mock-sidebar">
+                  <div class="mock-logo"></div>
+
+                  <div class="mock-menu active"></div>
+
+                  <div class="mock-menu"></div>
+
+                  <div class="mock-menu"></div>
+
+                  <div class="mock-menu"></div>
+                </div>
+
+                <div class="mock-content">
+                  <div class="mock-topbar">
+                    <div class="mock-search"></div>
+
+                    <div class="mock-avatar"></div>
+                  </div>
+
+                  <div class="mock-title"></div>
+
+                  <div class="mock-stats">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+
+                  <div class="mock-table">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project icon -->
+
+              <div class="project-floating-icon">
+                <i [class]="project.icon"></i>
+              </div>
+            </div>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,482 @@
+.projects-section {
+  position: relative;
+
+  padding: 120px 0;
+
+  background:
+    radial-gradient(circle at 80% 30%, rgba(108, 99, 255, 0.08), transparent 30%), #070b16;
+}
+
+/* Projects list */
+
+.projects-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 100px;
+}
+
+/* Case study */
+
+.project-case {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+/* Reverse */
+
+.project-reverse {
+  .project-content {
+    order: 2;
+  }
+
+  .project-visual {
+    order: 1;
+  }
+}
+
+/* Content */
+
+.project-number {
+  color: rgba(255, 255, 255, 0.12);
+
+  font-size: 70px;
+
+  font-weight: 800;
+
+  line-height: 0.8;
+
+  margin-bottom: 15px;
+}
+
+.project-category {
+  display: inline-block;
+
+  color: #7c73ff;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 12px;
+}
+
+.project-content h3 {
+  color: white;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+
+  margin-bottom: 5px;
+}
+
+.project-role {
+  color: rgba(255, 255, 255, 0.35);
+
+  font-size: 13px;
+
+  margin-bottom: 20px;
+}
+
+.project-description {
+  max-width: 550px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+/* Technologies */
+
+.project-technologies {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin: 25px 0;
+}
+
+.project-technologies span {
+  padding: 7px 11px;
+
+  border-radius: 50px;
+
+  background: rgba(108, 99, 255, 0.08);
+
+  border: 1px solid rgba(108, 99, 255, 0.15);
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 11px;
+}
+
+/* Highlights */
+
+.project-highlights {
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.project-highlights h4 {
+  color: white;
+
+  font-size: 13px;
+
+  margin-bottom: 12px;
+}
+
+.project-highlights ul {
+  padding: 0;
+
+  margin: 0;
+
+  list-style: none;
+}
+
+.project-highlights li {
+  display: flex;
+
+  gap: 8px;
+
+  margin-bottom: 8px;
+
+  color: rgba(255, 255, 255, 0.45);
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+.project-highlights li i {
+  color: #4ade80;
+}
+
+/* Browser */
+
+.project-visual {
+  position: relative;
+}
+
+.browser-window {
+  position: relative;
+
+  min-height: 390px;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  background: #10182c;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.3);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.project-visual:hover .browser-window {
+  transform: translateY(-8px) rotateX(2deg);
+
+  box-shadow: 0 45px 100px rgba(108, 99, 255, 0.15);
+}
+
+/* Browser header */
+
+.browser-header {
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 0 15px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.browser-dots {
+  display: flex;
+
+  gap: 6px;
+}
+
+.browser-dots span {
+  width: 8px;
+
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.browser-address {
+  flex: 1;
+
+  max-width: 220px;
+
+  padding: 5px 12px;
+
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  color: rgba(255, 255, 255, 0.2);
+
+  font-size: 9px;
+}
+
+/* Mock UI */
+
+.mock-ui {
+  display: flex;
+
+  height: 348px;
+}
+
+/* Sidebar */
+
+.mock-sidebar {
+  width: 65px;
+
+  padding: 18px 12px;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mock-logo {
+  width: 25px;
+
+  height: 25px;
+
+  margin: 0 auto 25px;
+
+  border-radius: 7px;
+
+  background: linear-gradient(135deg, #6c63ff, #00d4ff);
+}
+
+.mock-menu {
+  height: 5px;
+
+  margin-bottom: 17px;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.mock-menu.active {
+  background: linear-gradient(90deg, #6c63ff, #00d4ff);
+}
+
+/* Content */
+
+.mock-content {
+  flex: 1;
+
+  padding: 20px;
+}
+
+.mock-topbar {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.mock-search {
+  width: 110px;
+
+  height: 10px;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.mock-avatar {
+  width: 25px;
+
+  height: 25px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.mock-title {
+  width: 130px;
+
+  height: 15px;
+
+  margin-top: 30px;
+
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, 0.13);
+}
+
+/* Stats */
+
+.mock-stats {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+.mock-stats div {
+  height: 65px;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.mock-stats div:first-child {
+  background: rgba(108, 99, 255, 0.1);
+}
+
+/* Table */
+
+.mock-table {
+  margin-top: 20px;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.mock-table div {
+  height: 8px;
+
+  margin-bottom: 13px;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.mock-table div:nth-child(1) {
+  width: 90%;
+}
+
+.mock-table div:nth-child(2) {
+  width: 75%;
+}
+
+.mock-table div:nth-child(3) {
+  width: 85%;
+}
+
+.mock-table div:nth-child(4) {
+  width: 65%;
+}
+
+/* Floating icon */
+
+.project-floating-icon {
+  position: absolute;
+
+  right: 25px;
+
+  bottom: 25px;
+
+  width: 55px;
+
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background: linear-gradient(135deg, #6c63ff, #00d4ff);
+
+  color: white;
+
+  font-size: 22px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .project-case {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .project-reverse {
+    .project-content {
+      order: 1;
+    }
+
+    .project-visual {
+      order: 2;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .projects-section {
+    padding: 90px 0;
+  }
+
+  .projects-list {
+    gap: 70px;
+  }
+
+  .project-number {
+    font-size: 50px;
+  }
+
+  .browser-window {
+    min-height: 300px;
+  }
+
+  .mock-ui {
+    height: 258px;
+  }
+
+  .mock-sidebar {
+    width: 45px;
+  }
+}

@@ -1,0 +1,333 @@
+.experience-section {
+  position: relative;
+
+  padding: 120px 0;
+
+  background: #090e1b;
+}
+
+/* Timeline */
+
+.experience-timeline {
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+.experience-item {
+  display: grid;
+
+  grid-template-columns: 90px 1fr;
+
+  margin-bottom: 35px;
+}
+
+.timeline-side {
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.timeline-number {
+  position: relative;
+
+  z-index: 2;
+
+  width: 45px;
+
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #6c63ff, #00d4ff);
+
+  color: white;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  box-shadow: 0 0 25px rgba(108, 99, 255, 0.3);
+}
+
+.timeline-line {
+  position: absolute;
+
+  top: 45px;
+
+  bottom: -35px;
+
+  width: 1px;
+
+  background: linear-gradient(to bottom, rgba(108, 99, 255, 0.6), rgba(108, 99, 255, 0.05));
+}
+
+.experience-item:last-child .timeline-line {
+  display: none;
+}
+
+/* Experience card */
+
+.experience-card {
+  padding: 30px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateX(6px);
+
+  border-color: rgba(108, 99, 255, 0.3);
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+
+.experience-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.experience-period {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  margin-bottom: 12px;
+
+  border-radius: 50px;
+
+  color: #8b83ff;
+
+  background: rgba(108, 99, 255, 0.1);
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+.experience-header h3 {
+  margin: 0 0 5px;
+
+  color: white;
+
+  font-size: 23px;
+
+  font-weight: 700;
+}
+
+.experience-header h4 {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.45);
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+.company-icon {
+  width: 48px;
+
+  height: 48px;
+
+  flex: 0 0 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #7c73ff;
+
+  font-size: 18px;
+}
+
+/* Description */
+
+.experience-description {
+  max-width: 800px;
+
+  margin: 20px 0;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+/* Technology */
+
+.experience-tech {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.experience-tech span {
+  padding: 6px 10px;
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 11px;
+}
+
+/* Responsibilities */
+
+.responsibilities-section {
+  max-width: 1000px;
+
+  margin: 90px auto 0;
+}
+
+.responsibilities-heading {
+  margin-bottom: 25px;
+}
+
+.responsibilities-heading span {
+  color: #7c73ff;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.responsibilities-heading h3 {
+  margin-top: 8px;
+
+  color: white;
+
+  font-size: 24px;
+
+  font-weight: 700;
+}
+
+.responsibility-card {
+  height: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  padding: 16px;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  transition: all 0.25s ease;
+}
+
+.responsibility-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+
+  border-color: rgba(108, 99, 255, 0.2);
+}
+
+.responsibility-icon {
+  width: 25px;
+
+  height: 25px;
+
+  flex: 0 0 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 7px;
+
+  color: #4ade80;
+
+  background: rgba(34, 197, 94, 0.1);
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+  .experience-section {
+    padding: 90px 0;
+  }
+
+  .experience-item {
+    grid-template-columns: 55px 1fr;
+  }
+
+  .timeline-number {
+    width: 36px;
+
+    height: 36px;
+
+    font-size: 10px;
+  }
+
+  .timeline-line {
+    top: 36px;
+  }
+
+  .experience-card {
+    padding: 22px;
+  }
+
+  .experience-header h3 {
+    font-size: 19px;
+  }
+
+  .company-icon {
+    display: none;
+  }
+}

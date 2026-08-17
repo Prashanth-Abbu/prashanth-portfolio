@@ -1,0 +1,168 @@
+.premium-navbar {
+  padding: 18px 0;
+
+  background: rgba(7, 11, 22, 0.65);
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+
+  transition: all 0.3s ease;
+}
+
+/* Logo */
+
+.navbar-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  text-decoration: none;
+
+  font-size: 1.2rem;
+
+  font-weight: 700;
+
+  color: white;
+
+  letter-spacing: 0.5px;
+}
+
+.logo-symbol {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: rgba(221, 0, 49, 0.12);
+
+  border: 1px solid rgba(221, 0, 49, 0.25);
+
+  color: #dd0031;
+
+  font-size: 28px;
+
+  box-shadow: 0 0 25px rgba(221, 0, 49, 0.2);
+}
+
+.logo-name {
+  color: white;
+}
+
+/* Links */
+
+.navbar-nav {
+  gap: 8px;
+}
+
+.nav-link {
+  position: relative;
+
+  color: rgba(255, 255, 255, 0.65) !important;
+
+  font-size: 0.9rem;
+
+  font-weight: 500;
+
+  padding: 8px 14px !important;
+
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+
+  position: absolute;
+
+  bottom: 0;
+
+  left: 50%;
+
+  width: 0;
+
+  height: 2px;
+
+  transform: translateX(-50%);
+
+  background: linear-gradient(90deg, #6c63ff, #00d4ff);
+
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+.nav-link:hover::after {
+  width: 60%;
+}
+
+/* CTA */
+
+.resume-btn {
+  color: white;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 50px;
+
+  padding: 9px 18px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+.resume-btn i {
+  margin-left: 7px;
+}
+
+.resume-btn:hover {
+  color: white;
+
+  background: linear-gradient(135deg, #6c63ff, #00d4ff);
+
+  border-color: transparent;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 30px rgba(108, 99, 255, 0.25);
+}
+
+/* Mobile */
+
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    margin-top: 15px;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    background: rgba(13, 19, 36, 0.97);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .resume-btn {
+    display: inline-block;
+
+    margin-top: 15px;
+  }
+}

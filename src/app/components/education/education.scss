@@ -1,0 +1,155 @@
+.education-section {
+  padding: 120px 0;
+
+  background: #090e1b;
+}
+
+.education-card {
+  position: relative;
+
+  max-width: 900px;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(108, 99, 255, 0.3);
+}
+
+.education-icon {
+  width: 70px;
+
+  height: 70px;
+
+  flex: 0 0 70px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background: linear-gradient(135deg, #6c63ff, #00d4ff);
+
+  color: white;
+
+  font-size: 28px;
+
+  box-shadow: 0 15px 35px rgba(108, 99, 255, 0.2);
+}
+
+.education-period {
+  color: #7c73ff;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.education-content h3 {
+  color: white;
+
+  font-size: 24px;
+
+  margin: 8px 0 3px;
+}
+
+.education-content h4 {
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 14px;
+
+  margin: 0;
+}
+
+.education-content p {
+  color: rgba(255, 255, 255, 0.4);
+
+  font-size: 13px;
+
+  margin: 10px 0 0;
+}
+
+.education-badge {
+  margin-left: auto;
+
+  width: 70px;
+
+  height: 70px;
+
+  flex: 0 0 70px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background: rgba(34, 197, 94, 0.08);
+
+  border: 1px solid rgba(34, 197, 94, 0.15);
+
+  color: #4ade80;
+}
+
+.education-badge i {
+  font-size: 16px;
+}
+
+.education-badge span {
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+@media (max-width: 575px) {
+  .education-section {
+    padding: 90px 0;
+  }
+
+  .education-card {
+    padding: 25px;
+
+    align-items: flex-start;
+  }
+
+  .education-icon {
+    width: 50px;
+
+    height: 50px;
+
+    flex: 0 0 50px;
+
+    font-size: 20px;
+  }
+
+  .education-badge {
+    display: none;
+  }
+}

@@ -1,0 +1,105 @@
+<section id="experience" class="experience-section">
+  <div class="container">
+    <!-- Heading -->
+
+    <div class="section-heading">
+      <span class="section-label"> EXPERIENCE </span>
+
+      <h2>
+        My professional
+        <span class="gradient-text"> journey. </span>
+      </h2>
+
+      <p>
+        Building enterprise applications, solving frontend problems and growing through every
+        project.
+      </p>
+    </div>
+
+    <!-- Timeline -->
+
+    <div class="experience-timeline">
+      @for (experience of experiences; track experience.company) {
+        <div class="experience-item">
+          <!-- Timeline -->
+
+          <div class="timeline-side">
+            <div class="timeline-number">
+              {{ experience.number }}
+            </div>
+
+            <div class="timeline-line"></div>
+          </div>
+
+          <!-- Content -->
+
+          <div class="experience-card">
+            <!-- Header -->
+
+            <div class="experience-header">
+              <div>
+                <span class="experience-period">
+                  {{ experience.period }}
+                </span>
+
+                <h3>
+                  {{ experience.role }}
+                </h3>
+
+                <h4>
+                  {{ experience.company }}
+                </h4>
+              </div>
+
+              <div class="company-icon">
+                <i class="bi bi-building"></i>
+              </div>
+            </div>
+
+            <!-- Description -->
+
+            <p class="experience-description">
+              {{ experience.description }}
+            </p>
+
+            <!-- Technologies -->
+
+            <div class="experience-tech">
+              @for (technology of experience.technologies; track technology) {
+                <span>
+                  {{ technology }}
+                </span>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+
+    <!-- Responsibilities -->
+
+    <div class="responsibilities-section">
+      <div class="responsibilities-heading">
+        <span> WHAT I BRING </span>
+
+        <h3>Core engineering responsibilities</h3>
+      </div>
+
+      <div class="row g-3">
+        @for (responsibility of responsibilities; track responsibility) {
+          <div class="col-md-6">
+            <div class="responsibility-card">
+              <div class="responsibility-icon">
+                <i class="bi bi-check2"></i>
+              </div>
+
+              <span>
+                {{ responsibility }}
+              </span>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
