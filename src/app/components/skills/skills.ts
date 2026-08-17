@@ -36,6 +36,10 @@ export class Skills {
       name: 'React',
       icon: 'devicon-react-original',
     },
+    {
+      name: 'Micro Frontend',
+      icon: 'devicon-nodejs-plain',
+    },
   ];
 
   categories: SkillCategory[] = [
